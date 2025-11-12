@@ -1,23 +1,17 @@
 {
-  "name": "pumpfun-buy-sell-bot",
-  "version": "1.0.0",
-  "description": "PumpFun trading functions for Solana",
-  "main": "example.ts",
-  "scripts": {
-    "build": "tsc",
-    "start": "ts-node example.ts",
-    "buy": "ts-node -e \"import('./example').then(m => m.executeBuy(require('@solana/web3.js').Keypair.generate(), process.argv[2], parseFloat(process.argv[3])))\"",
-    "sell": "ts-node -e \"import('./example').then(m => m.executeSell(require('@solana/web3.js').Keypair.generate(), process.argv[2], BigInt(process.argv[3])))\""
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "hardhat": "^2.26.3"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.87.6",
-    "@solana/spl-token": "^0.3.9",
-    "@coral-xyz/anchor": "^0.28.0",
-    "@coral-xyz/borsh": "^0.29.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "@ankr.com/ankr.js": "^0.6.0",
+    "@chainlink/contracts": "^1.4.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "dotenv": "^16.4.7"
   }
 }
