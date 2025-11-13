@@ -4,13 +4,13 @@ A EVM token launchpad that uses bonding curve mechanics for price discovery and 
 
 ## Overview
 
-This project implements a factory-based token launchpad where users can create new tokens with a bonding curve pricing mechanism. Tokens automatically graduate to a DEX (DODO) when they reach a target market capitalization of $70,000 USD.
+This project implements a factory-based token launchpad where users can create new tokens with a bonding curve pricing mechanism. Tokens automatically graduate to a DEX when they reach a target market capitalization of $70,000 USD.
 
 ## Features
 
 - **Easy Token Creation**: Create new tokens with just a name, symbol, and 0.02 ETH fee
 - **Bonding Curve Pricing**: Automated market maker (AMM) style pricing using constant product formula
-- **Automatic DEX Listing**: Tokens automatically list on DODO DEX when reaching $70k USD market cap
+- **Automatic DEX Listing**: Tokens automatically list on DEX when reaching $70k USD market cap
 - **Dynamic Price Discovery**: Real-time price updates based on Chainlink ETH/USD oracle
 - **Security First**: Built with OpenZeppelin contracts, reentrancy guards, and access controls
 - **Multi-Chain Support**: Configured for multiple EVM networks
